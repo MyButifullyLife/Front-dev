@@ -1,0 +1,207 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Microsoft Yahei", "simhei";
+  background-color: #fff;
+  -webkit-overflow-scrolling: touch;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  vertical-align: baseline;
+  font-size: 100%;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  font-weight: normal;
+  max-height: 99999999px;
+}
+div {
+  max-height: 99999999px;
+}
+img {
+  display: block;
+}
+.m-top20 {
+  margin-top: 0.26666667rem;
+}
+.m-top30 {
+  margin-top: 0.4rem;
+}
+.m-top40 {
+  margin-top: 0.53333333rem;
+}
+.m-top50 {
+  margin-top: 0.66666667rem;
+}
+.m-top60 {
+  margin-top: 0.8rem;
+}
+.m-top70 {
+  margin-top: 0.93333333rem;
+}
+.m-top80 {
+  margin-top: 1.06666667rem;
+}
+.m-bottom20 {
+  margin-bottom: 0.26666667rem;
+}
+.m-bottom30 {
+  margin-bottom: 0.4rem;
+}
+.m-bottom40 {
+  margin-bottom: 0.53333333rem;
+}
+.m-bottom50 {
+  margin-bottom: 0.66666667rem;
+}
+.m-bottom60 {
+  margin-bottom: 0.8rem;
+}
+.m-bottom60 {
+  margin-bottom: 0.8rem;
+}
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.col {
+  display: block;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  width: 100%;
+}
+.grid-12 {
+  width: 100%;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.grid-12 .col-1,
+.grid-12 .col-2,
+.grid-12 .col-3,
+.grid-12 .col-4,
+.grid-12 .col-5,
+.grid-12 .col-6,
+.grid-12 .col-7,
+.grid-12 .col-8,
+.grid-12 .col-9,
+.grid-12 .col-10,
+.grid-12 .col-11 {
+  position: relative;
+  float: left;
+  min-height: 1px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  word-break: break-all;
+}
+.grid-12 .col-1 {
+  width: 8.333333333333332%;
+}
+.grid-12 .col-2 {
+  width: 16.666666666666664%;
+}
+.grid-12 .col-3 {
+  width: 25%;
+}
+.grid-12 .col-4 {
+  width: 33.33333333333333%;
+}
+.grid-12 .col-5 {
+  width: 41.66666666666667%;
+}
+.grid-12 .col-6 {
+  width: 50%;
+}
+.grid-12 .col-7 {
+  width: 58.333333333333336%;
+}
+.grid-12 .col-8 {
+  width: 66.66666666666666%;
+}
+.grid-12 .col-9 {
+  width: 75%;
+}
+.grid-12 .col-10 {
+  width: 83.33333333333334%;
+}
+.grid-12 .col-11 {
+  width: 91.66666666666666%;
+}
+.grid-12 .col-12 {
+  width: 100%;
+}
+input:focus {
+  outline: none;
+}
+button:focus {
+  outline: none;
+}
+/* IOS，input出现阴影 */
+input[type="text"],
+input[type="email"],
+input[type="search"],
+input[type="number"],
+input[type="password"],
+textarea {
+  -webkit-appearance: none !important;
+  /* 清楚ios阴影 */
+  -moz-appearance: none !important;
+  /* mobile firefox too! */
+}
+/* input为number时，在机子上显示上下箭头，去掉*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+}
+.view {
+  transition: all .5s ease;
+}
+.test-enter,
+.test-leave {
+  opacity: 0;
+  transform: translate3d(10px, 0, 0);
+}
+.v-link-active {
+  color: red;
+}
+[v-cloak] {
+  display: none;
+}
+.button-clear {
+  -webkit-transition: opacity 0.1s;
+  transition: opacity 0.1s;
+  padding: 0 6px;
+  max-height: 42px;
+  border-color: transparent;
+  background: none;
+  box-shadow: none;
+}

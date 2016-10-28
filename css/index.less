@@ -1,0 +1,274 @@
+@import "common.less";
+
+
+@fc-1-q:#c3c3c3;
+@fc-1-s:#000000;
+@fc-q:#666666;
+@fc-s:#121212;
+@title:#121212;
+@dec:#666666;
+@criColor:#c9c9c9;
+
+
+.banner-2{
+  width: 100%;
+  position: relative;
+  top:0;
+}
+.banner-bgImg{
+  width: 100%;
+}
+.banner-2-logo{
+  position: absolute;
+  top:42.5%;
+  width: 100%;
+  text-align: center;
+}
+.banner-logo-img{
+  .setWidth(252);
+  margin: 0 auto;
+}
+
+.banner-2-logo >p{
+
+  text-align: center;
+  .setMargin-top(40);
+  .fs(38);
+  color: #ffffff;
+  font-weight: 300;
+}
+.banner-2-logo >.solveTitle{
+  width: 100%;
+  color:#cfd1d4;
+  .fs(28);
+}
+
+
+.banner-2-logo >h1{
+  margin: 0;
+  padding: 0;
+  .fs(35);
+  color: #fff;
+  font-weight: 300;
+  .setMargin-top(25);
+}
+
+.bar{
+  width: 100%;
+  .setHeight(80);
+  background-color: #f7f7f7;
+  font-weight: 300;
+  .fs(28);
+}
+.bar-active{
+  background-color: #ffffff;
+  color:#2297ff !important;
+}
+.bar >li{
+  width: 25%;
+  height:100%;
+  float: left;
+  text-align: center;
+  color: @fc-1-s;
+  .setLineHeight(80);
+}
+
+.select-open{
+  display: block;
+}
+
+
+
+
+
+
+.select4 {
+  position: relative;
+  width: 100%;
+  > h1 {
+    width: 100%;
+    .setMargin-top(70);
+    .fs(35);
+    text-align: center;
+    color: #121212;
+  }
+  > h2 {
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+    .fs(28);
+    color: #121212;
+  }
+  .select4-title-des {
+    //position: relative;
+    width: 90%;
+    margin-left: 5%;
+    text-align: justify;
+    font-weight: 400;
+    color: @dec;
+    .fs(28);
+  }
+
+  .select4-tubiao {
+    width: 92%;
+    margin-left: 4%;
+    > div {
+
+      > img {
+        width: 55%;
+        margin: 0 auto;
+      }
+      > p {
+        color: @dec;
+        width: 100%;
+        text-align: center;
+        .setMargin-top(20);
+        .fs(28);
+        > span {
+          color: #000;
+        }
+      }
+    }
+
+  }
+
+  .select4-wenzi {
+    width: 88%;
+    margin-left: 6%;
+    border: 1px solid #dfdfdf;
+    border-radius: 5px;
+    > div {
+      > div {
+        color: @dec;
+        .fs(28);
+        text-align: center;
+      }
+    }
+  }
+  .select4-list {
+    width: 91%;
+    position: relative;
+    padding-left: 9%;
+    .setPadding-bottom(60);
+    .setPadding-top(60);
+    > span {
+      .setWidth(34);
+      .setHeight(34);
+      position: absolute;
+      top: 35%;
+      left: 9%;
+      .setLineHeight(34);
+      background-color: #d4d4d4;
+      color: #ffffff;
+      border-radius: 50%;
+      text-align: center;
+      .fs(30);
+    }
+    > p {
+      position: absolute;
+      left: 16%;
+
+      width: 80%;
+      top: 32%;
+
+      /* margin-left: 3px; */
+      .fs(30);
+    }
+    > .many-text {
+      position: absolute;
+      width: 80%;
+      .setMargin-left(5);
+
+      .fs(25);
+    }
+  }
+
+  .select4-list-add {
+    width: 100%;
+    .setPadding-bottom(20);
+    .setPadding-top(10);
+  }
+
+  .select4-des {
+    width: 100%;
+    background-color: #f3f3f3;
+    .setPadding-top(60);
+    padding-bottom: 14%;
+    margin-top: 6%;
+    > h1 {
+      width: 100%;
+      text-align: center;
+
+      .fs(35);
+    }
+    > h2 {
+      width: 100%;
+      text-align: center;
+      .fs(28);
+    }
+
+    .select4-dataImg {
+      width: 80%;
+      margin: 0 auto;
+      .setMargin-top(60);
+      .setMargin-bottom(60);
+    }
+
+    .select4-type-list {
+      width: 79%;
+      position: relative;
+      /* margin-left: 6%; */
+      margin: 0 auto;
+      .setPadding-top(70);
+      .setPadding-left(40);
+      .setPadding-right(40);
+      padding-bottom: 4%;
+      border-radius: 10px;
+      background-color: #ffffff;
+
+      .select4-type-list-conner {
+        position: absolute;
+        .setWidth(25);
+        .setHeight(25);
+        left: 50%;
+        top: 0%;
+        transform: translate(-50%, -50%) rotate(45deg);
+        -ms-transform: translate(-50%, -50%) rotate(45deg); /* IE 9 */
+        -moz-transform: translate(-50%, -50%) rotate(45deg); /* Firefox */
+        -webkit-transform: translate(-50%, -50%) rotate(45deg); /* Safari 和 Chrome */
+        -o-transform: translate(-50%, -50%) rotate(45deg);
+        background-color: #fff;
+      }
+
+      > h1 {
+        width: 100%;
+        .setMargin-top(70);
+        .fs(35);
+        text-align: center;
+        color: #121212;
+      }
+      > h2 {
+        width: 100%;
+        text-align: center;
+        font-weight: 400;
+        .fs(28);
+        color: @dec;
+      }
+
+      > div {
+        text-align: center;
+        > div {
+          > h1 {
+            .fs(28);
+          }
+          > p {
+            .fs(28);
+            color: @dec;
+          }
+        }
+      }
+    }
+
+  }
+
+}

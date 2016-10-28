@@ -1,0 +1,298 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Microsoft Yahei","simhei";
+  background-color: #fff;
+  -webkit-overflow-scrolling: touch;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  vertical-align: baseline;
+  font-size: 100%;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  font-weight: normal;
+  max-height: 99999999px;
+}
+div{
+  max-height: 99999999px;
+}
+img {
+  display: block;
+}
+
+//px(设计稿)转px(根据dpr计算后),用于固定大小、不随屏幕缩放的元素，如常见的字体大小
+.set(@name, @px){
+  @{name}: round(@px / 2) * 1px;
+  [data-dpr="2"] & {
+    @{name}: @px * 1px;
+  }
+  [data-dpr="3"] & {
+    @{name}: round(@px / 2 * 3) * 1px;
+  }
+}
+.setI(@name, @px){
+  @{name}: round(@px / 2) * 1px!important;
+  [data-dpr="2"] & {
+    @{name}: @px * 1px!important;
+  }
+  [data-dpr="3"] & {
+    @{name}: round(@px / 2 * 3) * 1px!important;
+  }
+}
+.fs(@px){
+  .set(font-size, @px);
+}
+.fsI(@px){
+  .setI(font-size, @px);
+}
+
+
+//750 设计稿px转rem方案
+
+.px2rem(@name, @px){
+    @{name}: (@px / 75) * 1rem;
+}
+.px2remI(@name, @px){
+    @{name}: (@px / 75) * 1rem!important ;
+}
+
+
+.setWidth(@px){
+  .px2rem(width, @px);
+}
+.setPadding-top(@px){
+  .px2rem(padding-top,@px);
+}
+.setPadding-bottom(@px){
+  .px2rem(padding-bottom,@px);
+}
+.setPadding-left(@px){
+  .px2rem(padding-left,@px);
+}
+.setPadding-right(@px){
+  .px2rem(padding-right,@px);
+}
+.setMargin-top(@px){
+  .px2rem(margin-top,@px);
+}
+.setTop(@px){
+  .px2rem(top,@px);
+}
+.setLeft(@px){
+  .px2rem(left,@px);
+}
+.setHeight(@px){
+  .px2rem(height,@px);
+}
+.setLineHeight(@px){
+  .px2rem(line-height,@px);
+}
+.setMargin-left(@px){
+  .px2rem(margin-left,@px);
+}
+.setMargin-bottom(@px){
+  .px2rem(margin-bottom,@px);
+}
+
+
+
+.m-top20{
+  .setMargin-top(20);
+}
+.m-top30{
+  .setMargin-top(30);
+}
+.m-top40{
+  .setMargin-top(40);
+}
+.m-top50{
+  .setMargin-top(50);
+}
+.m-top60{
+  .setMargin-top(60);
+}
+.m-top70{
+  .setMargin-top(70);
+}
+.m-top80{
+  .setMargin-top(80);
+}
+
+.m-bottom20{
+  .setMargin-bottom(20);
+}
+.m-bottom30{
+  .setMargin-bottom(30);
+}
+.m-bottom40{
+  .setMargin-bottom(40);
+}
+.m-bottom50{
+  .setMargin-bottom(50);
+}
+.m-bottom60{
+  .setMargin-bottom(60);
+}
+.m-bottom60{
+  .setMargin-bottom(60);
+}
+
+
+
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.col {
+  display: block;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  width: 100%;
+}
+
+
+// 轻型栅格系统
+.grid-12
+{
+      width: 100%;
+      overflow: hidden;
+     -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+
+      .col-1,
+      .col-2,
+      .col-3,
+      .col-4,
+      .col-5,
+      .col-6,
+      .col-7,
+      .col-8,
+      .col-9,
+      .col-10,
+      .col-11
+      {
+        position: relative;
+        float: left;
+        min-height: 1px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        word-break: break-all;
+      }
+
+  .col-1 {
+    width: 8.333333333333332%;
+  }
+  .col-2 {
+    width: 16.666666666666664%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33333333333333%;
+  }
+  .col-5 {
+    width: 41.66666666666667%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.333333333333336%;
+  }
+  .col-8 {
+    width: 66.66666666666666%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33333333333334%;
+  }
+  .col-11 {
+    width: 91.66666666666666%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+input:focus {
+  outline: none;
+}
+button:focus {
+  outline: none;
+}
+
+/* IOS，input出现阴影 */
+input[type="text"],
+input[type="email"],
+input[type="search"],
+input[type="number"],
+input[type="password"],
+textarea {
+  -webkit-appearance: none !important; /* 清楚ios阴影 */
+  -moz-appearance: none !important; /* mobile firefox too! */
+}
+/* input为number时，在机子上显示上下箭头，去掉*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+  -webkit-appearance: none !important;
+}
+.view {
+  transition: all .5s ease;
+}
+.test-enter, .test-leave {
+  opacity: 0;
+  transform: translate3d(10px, 0, 0);
+}
+.v-link-active {
+  color: red;
+}
+[v-cloak] {
+  display: none;
+}
+.button-clear {
+  -webkit-transition: opacity 0.1s;
+  transition: opacity 0.1s;
+  padding: 0 6px;
+  max-height: 42px;
+  border-color: transparent;
+  background: none;
+  box-shadow: none;
+}
